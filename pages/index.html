@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lucky House | Chinese Take-Out & Delivery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <div class="logo-area">
+        <div class="chinese-logo">鴻<br>運<br>樓</div>
+
+        <div>
+          <h2>Lucky House</h2>
+          <p>Chinese Take-Out & Delivery</p>
+          <span>Since 1975</span>
+        </div>
+      </div>
+
+      <a href="tel:6138371618" class="call-btn">☎ 613-837-1618</a>
+    </nav>
+
+    <div class="hero-content">
+      <p class="eyebrow">Lucky House</p>
+      <h1>Authentic Chinese Food Since 1975</h1>
+      <p>
+        Fresh Chinese cuisine prepared daily for take-out and delivery in Orléans.
+      </p>
+
+      <div class="hero-actions">
+        <a href="tel:6138371618" class="btn primary">☎ Call Now</a>
+        <a href="#menu" class="btn secondary">View Menu</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- INFO BAR -->
+  <section class="info-bar">
+    <div class="info-item">
+      <span>☎</span>
+      <h3>Call Us</h3>
+      <strong>613-837-1618</strong>
+      <p>Place your order by phone</p>
+    </div>
+
+    <div class="info-item">
+      <span>📍</span>
+      <h3>Our Location</h3>
+      <strong>1675 Tenth Line Rd.</strong>
+      <p>Orléans, ON K1E 3P6</p>
+    </div>
+
+    <div class="info-item">
+      <span>🕒</span>
+      <h3>Business Hours</h3>
+      <p>Mon - Thur & Sat: 11:30AM - 11:00PM</p>
+      <p>Friday: 11:30AM - 12:00AM</p>
+      <p>Sunday: 3:00PM - 10:00PM</p>
+    </div>
+
+    <div class="info-item">
+      <span>🥡</span>
+      <h3>Service</h3>
+      <strong>Take-Out & Delivery</strong>
+      <p>Minimum delivery order $20.00</p>
+    </div>
+  </section>
+
+  <!-- POPULAR DISHES -->
+  <section class="popular" id="popular">
+    <h2>Popular Dishes</h2>
+    <div class="section-line"></div>
+
+    <div class="popular-grid">
+      <article class="popular-card">
+        <img src="img/General Tao's Chicken.jpg" alt="General Tao Chicken">
+        <div>
+          <h3>General Tao's Chicken</h3>
+          <p>Crispy chicken tossed in a spicy sweet house sauce.</p>
+          <strong>$17.95</strong>
+        </div>
+      </article>
+
+      <article class="popular-card">
+        <img src="img/crispy.jpg" alt="Crispy Beef">
+        <div>
+          <h3>Crispy Beef</h3>
+          <p>Crispy beef prepared with our signature house sauce.</p>
+          <strong>$17.95</strong>
+        </div>
+      </article>
+
+      <article class="popular-card">
+        <img src="img/Kung Pao Shrimp.jpg" alt="Kung Pao Shrimp">
+        <div>
+          <h3>Kung Pao Shrimp</h3>
+          <p>Shrimp stir-fried with vegetables, peanuts, and spicy sauce.</p>
+          <strong>$18.95</strong>
+        </div>
+      </article>
+
+      <article class="popular-card">
+        <img src="img/Egg Rolls.jpg" alt="Egg Rolls">
+        <div>
+          <h3>Egg Rolls</h3>
+          <p>Crispy classic egg rolls served hot and fresh.</p>
+          <strong>$2.35</strong>
+        </div>
+      </article>
+    </div>
+
+    <a href="#menu" class="btn primary center-btn">View Full Menu</a>
+  </section>
+
+  <!-- DYNAMIC MENU -->
+  <section class="menu-section" id="menu">
+    <div class="menu-header">
+      <p class="eyebrow">Explore Our Menu</p>
+      <h2>Fresh Chinese Specialties</h2>
+      <p>
+        Search by dish name or browse by category.
+      </p>
+    </div>
+
+    <div class="search-container">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search menu items..."
+      />
+    </div>
+
+    <div class="categories">
+      <button class="active" onclick="filterMenu('All', this)">All</button>
+      <button onclick="filterMenu('Appetizers', this)">Appetizers</button>
+      <button onclick="filterMenu('Soups', this)">Soups</button>
+      <button onclick="filterMenu('Chicken', this)">Chicken</button>
+      <button onclick="filterMenu('Beef', this)">Beef</button>
+      <button onclick="filterMenu('Seafood', this)">Seafood</button>
+      <button onclick="filterMenu('Fried Rice', this)">Fried Rice</button>
+      <button onclick="filterMenu('Noodles', this)">Noodles</button>
+      <button onclick="filterMenu('Combos', this)">Combos</button>
+      <button onclick="filterMenu('Family Dinners', this)">Family Dinners</button>
+    </div>
+
+    <div id="menuGrid" class="menu-grid">
+      <!-- Menu items load from script.js -->
+    </div>
+  </section>
+
+  <!-- FAMILY COMBOS -->
+  <section class="family-section" id="combos">
+    <div class="family-image"></div>
+
+    <div class="family-content">
+      <p class="eyebrow">Family Combos</p>
+      <h2>Perfect for Any Occasion</h2>
+      <p>
+        Our complete Chinese dinners are perfect for sharing with family and friends.
+      </p>
+
+      <div class="combo-item">
+        <div>
+          <h3>Dinner For Two</h3>
+          <p>2 egg rolls, sweet & sour chicken balls, chicken chow mein, chicken fried rice, almond cookies.</p>
+        </div>
+        <strong>$44.25</strong>
+      </div>
+
+      <div class="combo-item">
+        <div>
+          <h3>Dinner For Four</h3>
+          <p>4 egg rolls, almond chicken guy ding, garlic spare ribs, chicken chow mein, sweet & sour chicken balls, chicken fried rice.</p>
+        </div>
+        <strong>$82.95</strong>
+      </div>
+
+      <div class="combo-item">
+        <div>
+          <h3>Dinner For Six</h3>
+          <p>6 egg rolls, sweet & sour chicken balls, almond chicken soo guy, shrimps har ding, spare ribs, chicken chop suey, chow mein, fried rice.</p>
+        </div>
+        <strong>$136.95</strong>
+      </div>
+
+      <a href="#menu" class="btn gold">View All Combos</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact">
+    <div class="footer-grid">
+      <div>
+        <h2 class="footer-chinese">鴻 運 樓</h2>
+        <p>
+          Serving Orléans and surrounding areas with authentic Chinese cuisine since 1975.
+        </p>
+      </div>
+
+      <div>
+        <h3>Contact Info</h3>
+        <p>☎ 613-837-1618</p>
+        <p>📍 1675 Tenth Line Rd, Orléans, ON K1E 3P6</p>
+        <p>🌐 luckyhousetakeout.com</p>
+      </div>
+
+      <div>
+        <h3>Find Us</h3>
+        <div class="map-box">
+          Lucky House<br>
+          Fallingbrook Plaza<br>
+          Orléans, ON
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Lucky House Chinese Take-Out. All rights reserved.</p>
+      <p>Website by GrowthLab Digital</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
