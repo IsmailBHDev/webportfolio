@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Corail | Menu Digital</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="img/fish.png">
+</head>
+
+<body>
+
+<header class="hero" id="home">
+  <nav class="navbar">
+    <div class="brand">
+      <img src="img/logo.jpg" alt="Le Corail Logo" />
+      
+    </div>
+
+    <a href="#menu" class="nav-btn">Voir le menu</a>
+  </nav>
+
+  <div class="hero-card">
+    <img src="img/logo.jpg" alt="Le Corail Logo" class="hero-logo" />
+
+    <p class="eyebrow">Fraîcheur • Saveur • Passion</p>
+
+    <h1>Fruits de Mer Frais & Plateaux à Partager</h1>
+
+    <p>
+      Découvrez nos entrées, salades, bols signature, pâtes, fritures,
+      spécialités et plateaux de fruits de mer.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#menu" class="btn primary">Voir le menu</a>
+      <a href="#contact" class="btn secondary">Commander</a>
+    </div>
+  </div>
+</header>
+
+<section class="info-bar">
+  <div>
+    <span>🐟</span>
+    <h3>Fraîcheur</h3>
+    <p>Fruits de mer préparés avec soin</p>
+  </div>
+
+  <div>
+    <span>🍽️</span>
+    <h3>Restaurant</h3>
+    <p>Poissonnerie & plats cuisinés</p>
+  </div>
+
+  <div>
+    <span>🚚</span>
+    <h3>Livraison</h3>
+    <p>Disponible sur DoorDash</p>
+  </div>
+
+  <div>
+    <span>💙</span>
+    <h3>Passion</h3>
+    <p>Saveurs marines et qualité</p>
+  </div>
+</section>
+
+<section class="featured">
+  <div class="section-heading">
+    <p class="eyebrow">Nos incontournables</p>
+    <h2>Plats populaires</h2>
+  </div>
+
+  <div class="featured-grid">
+    <article class="featured-card">
+      <img src="img/1.PNG" alt="Marina Corail 4P" />
+      <div>
+        <h3>Marina Corail 4P</h3>
+        <p>Homard, crab, calamari, moules, poisson grillé, filet de poisson, salade, riz et patates.</p>
+        <strong>239.99$</strong>
+      </div>
+    </article>
+
+    <article class="featured-card">
+      <img src="img/marina.jpg" alt="Mix Corail 3P" />
+      <div>
+        <h3>Mix Corail 3P</h3>
+        <p>Crawfish, moules, crab bleu, crevettes, salade, riz et patates.</p>
+        <strong>89.99$</strong>
+      </div>
+    </article>
+
+    <article class="featured-card">
+      <img src="img/test1.jpg" alt="Le Pêcheur 2P" />
+      <div>
+        <h3>Le Pêcheur 2P</h3>
+        <p>Poisson au choix, moules, crevettes et crab bleu.</p>
+        <strong>59.99$</strong>
+      </div>
+    </article>
+
+    <article class="featured-card">
+      <img src="img/test2.jpg" alt="Plat Homard" />
+      <div>
+        <h3>Plat Homard</h3>
+        <p>3 pièces avec accompagnements, frites, salade de chou, sauce maison et citron.</p>
+        <strong>71.99$</strong>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="menu-section" id="menu">
+  <div class="section-heading">
+    <p class="eyebrow">Menu Digital</p>
+    <h2>Explorez notre menu</h2>
+    <p>Recherchez un plat ou filtrez par catégorie.</p>
+  </div>
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Rechercher un plat..." />
+  </div>
+
+  <div class="categories">
+    <button class="active" onclick="filterMenu('All', this)">Tout</button>
+    <button onclick="filterMenu('Entrées', this)">Entrées</button>
+    <button onclick="filterMenu('Salades', this)">Salades</button>
+    <button onclick="filterMenu('Riz', this)">Riz</button>
+    <button onclick="filterMenu('Pâtes', this)">Pâtes</button>
+    <button onclick="filterMenu('Bols Signature', this)">Bols Signature</button>
+    <button onclick="filterMenu('Fritures', this)">Fritures</button>
+    <button onclick="filterMenu('Plateaux', this)">Plateaux</button>
+    <button onclick="filterMenu('Spécialités', this)">Spécialités</button>
+    <button onclick="filterMenu('Boissons', this)">Boissons</button>
+  </div>
+
+  <div id="menuGrid" class="menu-grid">
+    <!-- Menu loaded from script.js -->
+  </div>
+</section>
+
+<section class="premium-section">
+   <div class="premium-image">
+
+    </div>
+
+  <div class="premium-content">
+    <p class="eyebrow">Plateaux à partager</p>
+    <h2>Une expérience fruits de mer généreuse</h2>
+    <p>
+      Nos plateaux sont parfaits pour partager un repas riche en saveurs marines,
+      avec poissons, crevettes, moules, crabes et accompagnements.
+    </p>
+
+    <div class="premium-item">
+      <div>
+        <h3>Le Pêcheur 2P</h3>
+        <p>Poisson au choix, moules, crevettes, crab bleu.</p>
+      </div>
+      <strong>59.99$</strong>
+    </div>
+
+    <div class="premium-item">
+      <div>
+        <h3>Mix Corail 3P</h3>
+        <p>Crawfish, moules, crab bleu, crevettes, salade, riz, patates.</p>
+      </div>
+      <strong>89.99$</strong>
+    </div>
+
+    <div class="premium-item">
+      <div>
+        <h3>Marina Corail 4P</h3>
+        <p>Homard, crab, calamari, moules, poisson grillé et 5 boissons incluses.</p>
+      </div>
+      <strong>239.99$</strong>
+    </div>
+
+    <a href="#menu" class="btn gold">Voir les plateaux</a>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-grid">
+    <div>
+      <img src="img/logo_white.png" alt="Le Corail Logo" class="footer-logo" />
+      <p>
+        Poissonnerie & Restaurant de fruits de mer.
+        Fraîcheur, saveur et passion dans chaque plat.
+      </p>
+    </div>
+
+    <div>
+      <h3>Contact</h3>
+      <p>📞 Téléphone à ajouter</p>
+      <p>📍 Adresse à ajouter</p>
+      <p>🚚 Disponible sur DoorDash</p>
+    </div>
+
+    <div>
+      <h3>Services</h3>
+      <p>Menu digital</p>
+      <p>Commande à emporter</p>
+      <p>Plateaux à partager</p>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Le Corail. Tous droits réservés.</p>
+    <p>Menu digital par GrowthLab Digital</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
